@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TYPEATTACK_</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <!-- Twitter share meta info -->
+        <meta name="twitter:card" content="summary"></meta>
+        <meta property="og:image" content="https://ibb.co/1rNhv2f" />
+    </head>
+    <body>
+
+        <h1 class="game-logo">Typeattack_</h1>
+
+        <div class="container">
+
+            <div class="intro-container">
+                <h2>Welcome to TypeAttack</h2>
+
+                <p>Type the words as quick as you can, without making a single error.</p>
+
+                <button class="btn" id="begin">Play game</button>
+
+            </div>
+
+            <div class="game-container disabled">
+
+                <div class="title-container">
+                    <h2>Level <span id="currentLevel">1</span></h2>
+                </div>
+
+                <div class="stage-container">
+                    <div class="current-word" id="currentWord"></div>
+                </div>
+
+                <div class="timer-conatiner">
+                    <span class="timer" id="timer">10</span>
+                </div>
+
+            </div>
+
+            <div class="end-container disabled">
+                <h2>You finished it</h2>
+
+                <div class="timer-result" id="timerResult">
+
+                </div>
+
+                <p>Surely you can do it faster than that?</p>
+
+                <a class="twitter-share" id="share" href="#">Tweet your time</a>
+
+                <button class="btn" id="restart">Try again?</button>
+            </div>
+
+        </div>
+
+        <p class="footer">A game by JamieMoore</p>
+
+        <script src="./js/scripts.js" async defer></script>
+    </body>
+</html>
